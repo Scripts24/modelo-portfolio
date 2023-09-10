@@ -4,16 +4,69 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-.br-2.animado{
+
+/**Barras Menú hamburguesa**/
+
+.br-2.animado {
     opacity: 0;
 }
 
-.br-1.animado{
-    transform: rotate(45deg) translate(-9px, 8px);
+.br-1.animado {
+    transform       : rotate(45deg) translate(-9px, 8px);
     transform-origin: 0% 100%;
 }
 
-.br-3.animado{
-    transform: rotate(-45deg) translate(-3px, -10px);
+.br-3.animado {
+    transform       : rotate(-45deg) translate(-3px, -12px);
     transform-origin: 0% 100%;
+}
+
+/**Texto animado**/
+
+.texts {
+    height     : 90px;
+    line-height: 90px;
+    overflow   : hidden;
+}
+
+.texts li {
+    position   : relative;
+    top        : 0;
+    font-size  : 30px;
+    font-weight: bold;
+    color      : #0ef;
+    animation  : slide 15s steps(3) infinite, colorful 6s infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -270px;
+    }
+}
+
+@keyframes colorful {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.texts li span {
+    position: relative;
+}
+
+.texts li span::before {
+    content    : '';
+    position   : absolute;
+    left       : 0;
+    width      : 400px;
+    height     : 80px;
+    border-left: 2px solid #0ef;
+    animation  : typing 3.5s steps(23) infinite alternate;
+}
+
+@keyframes typing {
+    100% {
+        left  : 100%;
+        margin: 0 -15px 0 15px;
+    }
 }
