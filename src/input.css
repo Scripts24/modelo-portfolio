@@ -35,7 +35,7 @@
     font-size  : 30px;
     font-weight: bold;
     color      : #0ef;
-    animation  : slide 15s steps(3) infinite, colorful 6s infinite;
+    animation  : slide 12s steps(3) infinite, colorful 6s infinite;
 }
 
 @keyframes slide {
@@ -54,14 +54,14 @@
     position: relative;
 }
 
-.texts li span::before {
+/*.texts li span::before {
     content    : '';
     position   : absolute;
     left       : 0;
     width      : 400px;
     height     : 80px;
     border-left: 2px solid #0ef;
-    animation  : typing 3.5s steps(23) infinite alternate;
+    animation  : typing 3.5s steps(24) infinite alternate;
 }
 
 @keyframes typing {
@@ -69,12 +69,11 @@
         left  : 100%;
         margin: 0 -15px 0 15px;
     }
-}
+}*/
 
 
 @media screen and (max-width:400px){
     .texts li{
         font-size: 25px;
     }
-
 }
