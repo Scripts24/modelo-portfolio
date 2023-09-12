@@ -30,8 +30,8 @@
                 class="bg-white dark:bg-slate-800 p-7 h-[380px] w-[320px] md:flex flex-col items-start justify-around rounded-lg text-dark dark:text-white md:flex-row md:w-full md:py-0 md:h-[50px] md:bg-inherit md:dark:bg-primary hidden">
                 <ul class="flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full">
                     <li class="md:px-5 hover:text-sky-600"><a href="#about">Sobre mí</a></li>
-                    <li class="md:px-5 hover:text-sky-600"><a href="">Experiencia</a></li>
-                    <li class="md:px-5 hover:text-sky-600"><a href="">Proyectos</a></li>
+                    <li class="md:px-5 hover:text-sky-600"><a href="#experience">Experiencia</a></li>
+                    <li class="md:px-5 hover:text-sky-600"><a href="#projects">Proyectos</a></li>
                     <li class="md:px-5 hover:text-sky-600"><a href="">Contacto</a></li>
                 </ul>
                 <!--Botón modo oscuro-->
@@ -87,12 +87,81 @@
                         class="border-2 rounded border-sky-500 p-2 w-[240px] text-lg tracking-widest hover:bg-sky-500 hover:dark:text-slate-900">Contáctame</button>
                 </div>
             </div>
-            
-                <img src="./img/perfil.png" alt="perfil" class=" h-96 md:h-3/4 lg:h-4/5 m-auto">
-            
+
+            <img src="./img/perfil.png" alt="perfil" class=" h-96 md:h-3/4 lg:h-4/5 m-auto">
+
         </section>
         <!--Fin Seccción Sobre Mí-->
 
+        <!--Inicio Seccción Experiencia-->
+        <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-8">
+            Experiencia laboral</h2>
+        <section id="experience" class="my-12 flex flex-col w-[84%]  m-auto lg:flex-row lg:w-[87%] lg:my-28">
+            <div class="flex justify-between lg:flex-col lg:w-[20%]">
+                <button type="button" id="link1" data-id="job1"
+                    class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500 focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left border-sky-500 bg-white dark:bg-slate-700">VisualDesign</button>
+                <button type="button" data-id="job2"
+                    class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500 focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left ">DeveloperInk</button>
+                <button type="button" data-id="job3"
+                    class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500 focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left ">ArtDigital</button>
+                <button type="button" data-id="job4"
+                    class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500 focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left ">AtomCode</button>
+            </div>
+
+            <div class="my-5 lg:px-10 lg:my-0 lg:max-w-[800px]">
+                <article id="job1">
+                    <h3>Dirección y supervisión de proyectos en <span
+                            class="text-sky-500 font-bold text-lg">@VisualDesign</span></h3>
+                    <h4 class="text-sm pb-5">Julio 2019 - Presente</h4>
+                    <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Después de comprender sus requisitos,
+                        puedo utilizar mis años de experiencia para determinar las herramientas y los métodos de
+                        desarrollo adecuados para cada cliente.
+                        La sostenibilidad del proyecto es importante para mí. Al asegurarnos de trabajar de la manera
+                        más eficiente, podemos reducir la huella de lo que producimos en la web. Esto en muchos casos
+                        tiene un beneficio para el usuario porque si un sitio web es eficiente, se beneficia de un buen
+                        rendimiento y una experiencia de usuario rápida</p>
+                </article>
+                <!--Articulos ocultos por defecto-->
+                <article id="job2" class="hidden">
+                    <h3>Desarrolladora senior en <span class="text-sky-500 font-bold text-lg">@DeveloperInk</span></h3>
+                    <h4 class="text-sm pb-5">Enero 2015 - Mayo 2019</h4>
+                    <p class="text-stone-900 dark:text-cyan-50 font-normal px-5"> He lanzado grandes proyectos
+                        publicitados internacionalmente que tenían que funcionar desde el primer día, por lo que
+                        entiendo la importancia de la confiabilidad y el rendimiento.
+                        Destacada como gran comunicadora y colaboradora, por lo que entiendo que no siempre te importa
+                        *cómo* se hace, solo que se haga bien y a tiempo.</p>
+                </article>
+
+                <article id="job3" class="hidden">
+                    <h3>Diseñadora gráfica en <span class="text-sky-500 font-bold text-lg">@ArtDigital</span></h3>
+                    <h4 class="text-sm pb-5">Mayo 2010 - Diciembre 2014</h4>
+                    <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">He trabajado en una multitud de
+                        proyectos web e impresos para una variedad de clientes que brindan diseño y desarrollo.
+                        Soluciones de eCommerce, branding Corporativo y diseño gráfico. Durante mi carrera en
+                        Multimedia, estudié Arquitectura de la Información y, por lo tanto, tengo un profundo
+                        conocimiento de los wireframes, los mapas de sitios y el diseño de la experiencia del usuario,
+                        que aprovecho en cada proyecto en el que trabajo.</p>
+                </article>
+
+                <article id="job4" class="hidden">
+                    <h3>Desarrolladora junior en <span class="text-sky-500 font-bold text-lg">@AtomCode</span></h3>
+                    <h4 class="text-sm pb-5">Julio 2007 - Marzo 2010</h4>
+                    <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Cuando descubrí el diseño web en la
+                        universidad, me di cuenta de que encajaría perfectamente. Podría usar mi lado creativo para
+                        diseñar y mi lado lógico para codificar. Como beneficio adicional, ser diseñador y desarrollador
+                        me permite asegurarme de que no se pierda ningún detalle en el proceso creativo.</p>
+                </article>
+
+            </div>
+
+        </section>
+        <!--Fin Seccción Experiencia-->
+
+        <!--Inicio Seccción Proyectos-->
+        <section id="projects">
+
+        </section>
+        <!--Fin Seccción Proyectos-->
 
     </main>
     <!--IFin contenido principal-->

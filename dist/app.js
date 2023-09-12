@@ -64,3 +64,35 @@ darkButton.addEventListener('click', function () {
     }
 
 });
+
+
+// Sección Experiencia laboral
+
+const experience = document.querySelector('#experience')
+const articles = document.querySelectorAll('#experience article')
+
+experience.addEventListener('click', (event) => {
+    const id = event.target.dataset.id
+
+    if (id) {
+        articles.forEach((article) => {
+            article.classList.add('hidden')
+        })
+        const element = document.getElementById(id)
+        element.classList.remove('hidden')
+    }
+})
+
+const jobLinks = document.querySelectorAll('#experience button')
+const firstLink = document.querySelector('#link1')
+
+
+jobLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        firstLink.classList.remove(
+            'border-sky-500',
+            'bg-white',
+            'dark:bg-slate-700'
+        )
+    })
+})
