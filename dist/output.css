@@ -883,11 +883,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -914,10 +909,6 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -1105,15 +1096,50 @@ video {
     }
 }*/
 
-@media screen and (max-width:400px){
-  .texts li{
+@media screen and (max-width:400px) {
+  .texts li {
     font-size: 25px;
   }
 }
 
-.hover\:bg-sky-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+/* Upload */
+
+.top {
+  display: none;
+}
+
+.bi-chevron-double-up {
+  color        : whitesmoke;
+  font-size    : 1rem;
+  font-weight  : 700;
+  background   : rgb(58, 111, 180);
+  text-align   : center;
+  right        : 3%;
+  padding      : .8rem;
+  border-radius: .3rem;
+  width        : 2.5rem;
+  height       : 2.5rem;
+  line-height  : .5;
+  position     : fixed;
+  bottom       : 5rem;
+  transition   : all .5s ease;
+  animation    : upload 3s infinite alternate;
+  cursor       : pointer;
+  z-index      : 10;
+}
+
+.bi-chevron-double-up:hover {
+  background: gray;
+}
+
+@keyframes upload {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
 }
 
 .hover\:bg-sky-500:hover {
@@ -1306,18 +1332,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:m-auto {
-    margin: auto;
-  }
-
-  .md\:ml-6 {
-    margin-left: 1.5rem;
-  }
-
-  .md\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -1332,10 +1346,6 @@ video {
 
   .md\:h-\[50px\] {
     height: 50px;
-  }
-
-  .md\:w-\[45\%\] {
-    width: 45%;
   }
 
   .md\:w-full {
@@ -1368,10 +1378,6 @@ video {
     background-color: inherit;
   }
 
-  .md\:p-4 {
-    padding: 1rem;
-  }
-
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -1387,15 +1393,6 @@ video {
     padding-bottom: 1.5rem;
   }
 
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .md\:pb-4 {
-    padding-bottom: 1rem;
-  }
-
   .md\:text-left {
     text-align: left;
   }
@@ -1407,36 +1404,20 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:m-auto {
-    margin: auto;
-  }
-
   .lg\:my-14 {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
-  }
-
-  .lg\:ml-10 {
-    margin-left: 2.5rem;
-  }
-
-  .lg\:mb-4 {
-    margin-bottom: 1rem;
   }
 
   .lg\:h-4\/5 {
     height: 80%;
   }
 
-  .lg\:w-\[60\%\] {
-    width: 60%;
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:w-\[87\%\] {
     width: 87%;
-  }
-
-  .lg\:w-\[50\%\] {
-    width: 50%;
   }
 }

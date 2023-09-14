@@ -72,8 +72,48 @@
 }*/
 
 
-@media screen and (max-width:400px){
-    .texts li{
+@media screen and (max-width:400px) {
+    .texts li {
         font-size: 25px;
+    }
+}
+
+/* Upload */
+
+.top {
+    display: none;
+}
+
+.bi-chevron-double-up {
+    color        : whitesmoke;
+    font-size    : 1rem;
+    font-weight  : 700;
+    background   : rgb(58, 111, 180);
+    text-align   : center;
+    right        : 3%;
+    padding      : .8rem;
+    border-radius: .3rem;
+    width        : 2.5rem;
+    height       : 2.5rem;
+    line-height  : .5;
+    position     : fixed;
+    bottom       : 5rem;
+    transition   : all .5s ease;
+    animation    : upload 3s infinite alternate;
+    cursor       : pointer;
+    z-index      : 10;
+}
+
+.bi-chevron-double-up:hover {
+    background: gray;
+}
+
+@keyframes upload {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
     }
 }
