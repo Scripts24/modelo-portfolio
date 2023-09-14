@@ -5,8 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio con tailwind</title>
+
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!--Flowbite css-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <!--Styles-->
     <link rel="stylesheet" href="./output.css" />
 
@@ -94,66 +97,122 @@
         <!--Fin Seccción Sobre Mí-->
 
         <!--Inicio Seccción Experiencia-->
-        <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-8">
+        <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-6">
             Experiencia laboral</h2>
-        <section id="experience" class="my-12 flex flex-col w-[84%]  m-auto lg:flex-row lg:w-[87%] lg:my-28">
-            <div class="flex justify-between lg:flex-col lg:w-[20%]">
-                <button type="button" id="link1" data-id="job1"
-                    class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500 focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left border-sky-500 bg-white dark:bg-slate-700">VisualDesign</button>
-                <button type="button" data-id="job2"
-                    class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500 focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left ">DeveloperInk</button>
-                <button type="button" data-id="job3"
-                    class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500 focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left ">ArtDigital</button>
-                <button type="button" data-id="job4"
-                    class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1 hover:bg-white focus:bg-white focus:border-sky-500 focus:dark:bg-slate-700 lg:border-l-2 lg:border-b-0 lg:h-full lg:text-left ">AtomCode</button>
-            </div>
+        <section id="experience" class=" w-[84%]  m-auto lg:w-[87%] lg:my-28">
 
-            <div class="my-5 lg:px-10 lg:my-0 lg:max-w-[800px]">
-                <article id="job1">
-                    <h3>Dirección y supervisión de proyectos en <span
-                            class="text-sky-500 font-bold text-lg">@VisualDesign</span></h3>
-                    <h4 class="text-sm pb-5">Julio 2019 - Presente</h4>
-                    <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Después de comprender sus requisitos,
-                        puedo utilizar mis años de experiencia para determinar las herramientas y los métodos de
-                        desarrollo adecuados para cada cliente.
-                        La sostenibilidad del proyecto es importante para mí. Al asegurarnos de trabajar de la manera
-                        más eficiente, podemos reducir la huella de lo que producimos en la web. Esto en muchos casos
-                        tiene un beneficio para el usuario porque si un sitio web es eficiente, se beneficia de un buen
-                        rendimiento y una experiencia de usuario rápida</p>
-                </article>
-                <!--Articulos ocultos por defecto-->
-                <article id="job2" class="hidden">
-                    <h3>Desarrolladora senior en <span class="text-sky-500 font-bold text-lg">@DeveloperInk</span></h3>
-                    <h4 class="text-sm pb-5">Enero 2015 - Mayo 2019</h4>
-                    <p class="text-stone-900 dark:text-cyan-50 font-normal px-5"> He lanzado grandes proyectos
-                        publicitados internacionalmente que tenían que funcionar desde el primer día, por lo que
-                        entiendo la importancia de la confiabilidad y el rendimiento.
-                        Destacada como gran comunicadora y colaboradora, por lo que entiendo que no siempre te importa
-                        *cómo* se hace, solo que se haga bien y a tiempo.</p>
-                </article>
+            <ol class="relative border-l border-gray-500 dark:border-gray-700 ">
 
-                <article id="job3" class="hidden">
-                    <h3>Diseñadora gráfica en <span class="text-sky-500 font-bold text-lg">@ArtDigital</span></h3>
-                    <h4 class="text-sm pb-5">Mayo 2010 - Diciembre 2014</h4>
-                    <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">He trabajado en una multitud de
-                        proyectos web e impresos para una variedad de clientes que brindan diseño y desarrollo.
-                        Soluciones de eCommerce, branding Corporativo y diseño gráfico. Durante mi carrera en
-                        Multimedia, estudié Arquitectura de la Información y, por lo tanto, tengo un profundo
-                        conocimiento de los wireframes, los mapas de sitios y el diseño de la experiencia del usuario,
-                        que aprovecho en cada proyecto en el que trabajo.</p>
-                </article>
+                <li class="mb-10 ml-6">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-slate-700 dark:ring-gray-500 dark:bg-blue-900">
+                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M19.728 10.686c-2.38 2.256-6.153 3.381-9.875 3.381-3.722 0-7.4-1.126-9.571-3.371L0 10.437V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-7.6l-.272.286Z" />
+                            <path
+                                d="m.135 7.847 1.542 1.417c3.6 3.712 12.747 3.7 16.635.01L19.605 7.9A.98.98 0 0 1 20 7.652V6a2 2 0 0 0-2-2h-3V3a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v1H2a2 2 0 0 0-2 2v1.765c.047.024.092.051.135.082ZM10 10.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5ZM7 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1H7V3Z" />
+                        </svg>
+                    </span>
+                    <div
+                        class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 ">
+                        <div class="items-center justify-between mb-3 sm:flex">
+                            <time class="mb-1 text-xs font-bold text-gray-400 sm:order-last sm:mb-0 ">Julio 2019 - Presente</time>
+                            <div class="text-sm font-bold text-gray-500 lex dark:text-gray-300"><h3>Dirección y supervisión de proyectos en <span
+                                class="text-sky-500 font-bold text-lg">@VisualDesign</span></h3>
+                            </div>
+                        </div>
+                        <div
+                            class="hover:bg-slate-200  hover:dark:bg-sky-700  p-3 text-xs italic font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+                            Después de comprender sus requisitos, puedo utilizar mis años de experiencia para determinar las herramientas y los métodos de
+                            desarrollo adecuados para cada cliente.
+                            La sostenibilidad del proyecto es importante para mí. Al asegurarnos de trabajar de la manera más eficiente, podemos reducir la huella de lo que producimos en la web. Esto en muchos
+                            casos tiene un beneficio para el usuario porque si un sitio web es eficiente, se beneficia de un buen rendimiento y una experiencia de usuario rápida.
+                        </div>
+                    </div>
+                </li>
 
-                <article id="job4" class="hidden">
-                    <h3>Desarrolladora junior en <span class="text-sky-500 font-bold text-lg">@AtomCode</span></h3>
-                    <h4 class="text-sm pb-5">Julio 2007 - Marzo 2010</h4>
-                    <p class="text-stone-900 dark:text-cyan-50 font-normal px-5">Cuando descubrí el diseño web en la
-                        universidad, me di cuenta de que encajaría perfectamente. Podría usar mi lado creativo para
-                        diseñar y mi lado lógico para codificar. Como beneficio adicional, ser diseñador y desarrollador
-                        me permite asegurarme de que no se pierda ningún detalle en el proceso creativo.</p>
-                </article>
+                <li class="mb-10 ml-6">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-slate-700 dark:ring-gray-500 dark:bg-blue-900">
+                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M19.728 10.686c-2.38 2.256-6.153 3.381-9.875 3.381-3.722 0-7.4-1.126-9.571-3.371L0 10.437V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-7.6l-.272.286Z" />
+                            <path
+                                d="m.135 7.847 1.542 1.417c3.6 3.712 12.747 3.7 16.635.01L19.605 7.9A.98.98 0 0 1 20 7.652V6a2 2 0 0 0-2-2h-3V3a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v1H2a2 2 0 0 0-2 2v1.765c.047.024.092.051.135.082ZM10 10.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5ZM7 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1H7V3Z" />
+                        </svg>
+                    </span>
+                    <div
+                        class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600">
+                        <div class="items-center justify-between mb-3 sm:flex">
+                            <time class="mb-1 text-xs font-bold text-gray-400 sm:order-last sm:mb-0">Enero 2015 - Mayo 2019</time>
+                            <div class="text-sm font-bold text-gray-500 lex dark:text-gray-300"><h3>Desarrolladora senior en <span class="text-sky-500 font-bold text-lg">@DeveloperInk</span></h3>
+                            </div>
+                        </div>
+                        <div
+                            class="hover:bg-slate-200  hover:dark:bg-sky-700 p-3 text-xs italic font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+                            He lanzado grandes proyectos publicitados internacionalmente que tenían que funcionar desde el primer día, por lo que
+                            entiendo la importancia de la confiabilidad y el rendimiento.
+                            Destacada como gran comunicadora y colaboradora, por lo que entiendo que no siempre te importa *cómo* se hace, solo que se haga bien y a tiempo.
+                        </div>
+                    </div>
+                </li>
 
-            </div>
+                <li class="mb-10 ml-6">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-slate-700 dark:ring-gray-500 dark:bg-blue-900">
+                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M19.728 10.686c-2.38 2.256-6.153 3.381-9.875 3.381-3.722 0-7.4-1.126-9.571-3.371L0 10.437V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-7.6l-.272.286Z" />
+                            <path
+                                d="m.135 7.847 1.542 1.417c3.6 3.712 12.747 3.7 16.635.01L19.605 7.9A.98.98 0 0 1 20 7.652V6a2 2 0 0 0-2-2h-3V3a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v1H2a2 2 0 0 0-2 2v1.765c.047.024.092.051.135.082ZM10 10.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5ZM7 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1H7V3Z" />
+                        </svg>
+                    </span>
+                    <div
+                        class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600">
+                        <div class="items-center justify-between mb-3 sm:flex">
+                            <time class="mb-1 text-xs font-bold text-gray-400 sm:order-last sm:mb-0">Mayo 2010 - Diciembre 2014</time>
+                            <div class="text-sm font-bold text-gray-500 lex dark:text-gray-300"><h3>Diseñadora gráfica en <span class="text-sky-500 font-bold text-lg">@ArtDigital</span></h3> 
+                            </div>
+                        </div>
+                        <div
+                            class="hover:bg-slate-200  hover:dark:bg-sky-700 p-3 text-xs italic font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+                            He trabajado en una multitud de proyectos web e impresos para una variedad de clientes que brindan diseño y desarrollo.
+                            Soluciones de eCommerce, branding Corporativo y diseño gráfico. Durante mi carrera en Multimedia, estudié Arquitectura de la Información y, por lo tanto, tengo un profundo
+                            conocimiento de los wireframes, los mapas de sitios y el diseño de la experiencia del usuario, que aprovecho en cada proyecto en el que trabajo.
+                        </div>
+                    </div>
+                </li>
 
+                <li class="mb-10 ml-6">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-slate-700 dark:ring-gray-500 dark:bg-blue-900">
+                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M19.728 10.686c-2.38 2.256-6.153 3.381-9.875 3.381-3.722 0-7.4-1.126-9.571-3.371L0 10.437V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-7.6l-.272.286Z" />
+                            <path
+                                d="m.135 7.847 1.542 1.417c3.6 3.712 12.747 3.7 16.635.01L19.605 7.9A.98.98 0 0 1 20 7.652V6a2 2 0 0 0-2-2h-3V3a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v1H2a2 2 0 0 0-2 2v1.765c.047.024.092.051.135.082ZM10 10.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5ZM7 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1H7V3Z" />
+                        </svg>
+                    </span>
+                    <div
+                        class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600">
+                        <div class="items-center justify-between mb-3 sm:flex">
+                            <time class="mb-1 text-xs font-bold text-gray-400 sm:order-last sm:mb-0">Julio 2007 - Marzo 2010</time>
+                            <div class="text-sm font-bold text-gray-500 lex dark:text-gray-300"><h3>Desarrolladora junior en <span class="text-sky-500 font-bold text-lg">@AtomCode</span></h3>
+                            </div>
+                        </div>
+                        <div
+                            class="hover:bg-slate-200  hover:dark:bg-sky-700 p-3 text-xs italic font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+                            Cuando descubrí el diseño web en la universidad, me di cuenta de que encajaría perfectamente. Podría usar mi lado creativo para
+                            diseñar y mi lado lógico para codificar. Como beneficio adicional, ser diseñador y desarrollador me permite asegurarme de que no se pierda ningún detalle en el proceso creativo.
+                        </div>
+                    </div>
+                </li>
+
+            </ol>
         </section>
         <!--Fin Seccción Experiencia-->
 
@@ -164,8 +223,10 @@
         <!--Fin Seccción Proyectos-->
 
     </main>
-    <!--IFin contenido principal-->
+    <!--Fin contenido principal-->
     <script src="./app.js"></script>
+    <!--Flowbite js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 </body>
 
 </html>
